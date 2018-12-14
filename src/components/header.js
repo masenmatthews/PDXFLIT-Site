@@ -2,12 +2,16 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './header.module.scss';
+import logo from '../images/pdxflit-logo-header.jpg';
 
 const Header = ({ siteTitle }) => (
   <div className={styles.background}>
     <div className={styles.container}>
       <h1 className={styles.header}>
-        <Link to="/">{siteTitle}</Link>
+        <Link to="/">
+          <img src={logo} />
+          {siteTitle}
+        </Link>
       </h1>
       <div className={styles.links}>
         <Link to="/about/">About</Link>
