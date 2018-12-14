@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import Image from '../components/images/pdxFlitLogo';
@@ -18,7 +17,6 @@ const IndexPage = () => (
     <div className={styles.mainImage}>
       <Image />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 );
 
