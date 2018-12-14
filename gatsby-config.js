@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
-    description: 'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@gatsbyjs',
+    title: 'PDXFlit',
+    description:
+      'A place for people who aspire to work in PDXtech! Creating an online community that can meet offline and work on developing their skills!',
+    author: '@PDXFlit',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -31,4 +32,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
-}
+};
