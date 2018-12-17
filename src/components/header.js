@@ -2,22 +2,25 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './header.module.scss';
-import logo from '../images/pdxflit-logo-header.jpg';
 
 const Header = ({ siteTitle }) => (
   <div className={styles.background}>
+    <div className={styles.links}>
+        <button className={styles.buttonLinks}><Link to="/about/">About</Link></button>
+        <button className={styles.buttonLinks}><Link to="/contact/">Contact</Link></button>
+        <button className={styles.buttonLinks}><Link to="/survey/">New Members</Link></button>
+      </div>
     <div className={styles.container}>
       <h1 className={styles.header}>
         <Link to="/">
-          <img src={logo} />
-          {siteTitle}
+          Portland
+          <br />
+          <span className={styles.subheader}>Future Leaders in Tech</span>
         </Link>
+        <button className={styles.join}>
+          <Link to="/survey/">Join</Link>
+        </button>
       </h1>
-      <div className={styles.links}>
-        <Link to="/about/">About</Link>
-        <Link to="/contact/">Contact</Link>
-        <Link to="/survey/">New Member Survey</Link>
-      </div>
     </div>
   </div>
 );
