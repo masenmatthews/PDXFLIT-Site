@@ -5,11 +5,6 @@ import styles from './header.module.scss';
 
 const Header = ({ siteTitle }) => (
   <div className={styles.background}>
-    <div className={styles.links}>
-        <button className={styles.buttonLinks}><Link to="/about/">About</Link></button>
-        <button className={styles.buttonLinks}><Link to="/contact/">Contact</Link></button>
-        <button className={styles.buttonLinks}><Link to="/survey/">New Members</Link></button>
-      </div>
     <div className={styles.container}>
       <h1 className={styles.header}>
         <Link to="/">

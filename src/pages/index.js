@@ -5,6 +5,7 @@ import Image from '../components/images/pdxFlitLogo';
 import SEO from '../components/seo';
 import styles from './index.module.css';
 import WelcomeBody from '../components/welcome-body'
+import Header from '../components/header'
 
 const IndexPage = () => (
   <div>
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <div className={styles.mainImage}>
     </div>
   </Layout>
+  <Header />
   <WelcomeBody/>
   </div>
 );

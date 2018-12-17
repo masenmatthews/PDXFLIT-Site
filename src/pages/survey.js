@@ -6,7 +6,6 @@ import SEO from '../components/seo';
 const Survey = () => (
   <Layout>
     <SEO title="Survey" />
-    asljdlaskdll;as
   </Layout>
 );
 

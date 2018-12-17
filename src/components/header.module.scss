@@ -29,12 +29,11 @@
   a {
     color: white;
     text-decoration: none;
-    // vertical-align: top;
   }
 }
 
 .header {
-  min-height: 300px;
+  min-height: 350px;
   font-family: 'Lilita One', cursive;
   font-size: 50px;
   text-align: center;
@@ -57,29 +56,6 @@
   color: white;
 }
 
-
-.links {
-  padding-top: 20px;
-  display: block;
-
-}
-
-.buttonLinks {
-  border-radius: 2%;
-  margin: 20px;
-  background-color: gray;
-  font-size: 20px;
-  padding: 10px;
-  font-family: 'Lilita One', cursive;
-  a {
-    text-decoration: none;
-    color: white;
-  }
-}
-
-  a:hover {
-    text-decoration: underline;
-  }
 
   @media(min-width:770px){
     .header {
