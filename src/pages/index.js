@@ -9,13 +9,13 @@ import Header from '../components/header'
 
 const IndexPage = () => (
   <div>
-  <Layout>
-    <SEO title="Home" keywords={['gatsby', 'application', 'react']} />  
-    <div className={styles.mainImage}>
-    </div>
-  </Layout>
-  <Header />
-  <WelcomeBody/>
+    <Layout>
+      <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
+      <div className={styles.mainImage}>
+      </div>
+      <Header />
+      <WelcomeBody />
+    </Layout>
   </div>
 );
 
