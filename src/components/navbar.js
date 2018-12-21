@@ -6,8 +6,8 @@ import logo from '../images/logo.png';
 const Navbar = () => (
   <div className={styles.links}>
     <Link to="/">
-        <img src={logo} className={styles.logo}/>
-    </Link>   
+      <img src={logo} alt="PDXFlit Logo" className={styles.logo} />
+    </Link>
     <button className={styles.buttonLinks}>
       <Link to="/about/" className={styles.about}>About</Link>
     </button>
