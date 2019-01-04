@@ -17,6 +17,20 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
+      resolve: `gatsby-source-meetup`,
+      options: {
+        // Learn about environment variables: https://gatsby.app/env-vars
+        // Your Meetup.com API key can be retrieved here: https://secure.meetup.com/en-US/meetup_api/key/
+        key: process.env.MEETUP_API_KEY,
+        groupUrlName: 'pdxFLIT-Portland-Future-Leaders-In-Tech',
+        // Optional parameters for retrieving Events, see full documentation at
+        // https://www.meetup.com/meetup_api/docs/:urlname/events/?uri=%2Fmeetup_api%2Fdocs%2F%3Aurlname%2Fevents%2F#list
+        status: 'upcoming,past',
+        desc: 'true',
+        page: 10,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'gatsby-starter-default',
