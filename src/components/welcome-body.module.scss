@@ -1,0 +1,37 @@
+.twitter {
+    display:none;
+}
+
+.event {
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 40px;
+    }
+}
+
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size :20px;
+}
+
+@media(min-width:770px){
+    .twitter {
+        width: 30%;
+        display: block;
+        margin: 0 0 0 50px;
+        float: right; 
+    }
+
+    .row {
+        display: flex;
+    }
+    .event {
+        width: 65%;
+        float: left;
+        padding: 50px;
+    }
+}

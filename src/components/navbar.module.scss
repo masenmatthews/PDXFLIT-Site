@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One|Raleway');
+
+.links {
+  padding-top: 20px;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  .logo {
+    display:none;
+  }
+}
+  
+.buttonLinks {
+  border-radius: 2%;
+  margin: 10px;
+  background-color: rgb(42, 70, 94);
+  font-size: 20px;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+  a {
+    text-decoration: none;
+  }
+  .about {
+    color: #FDCF00;
+  }
+  .contact {
+    color: #FF803E;
+  }
+  .new {
+    color: white;
+  }
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media(min-width:770px){
+  .buttonLinks{
+    margin: 20px;
+  }
+  .links {
+    text-align: right;
+    .logo {
+      width: 150px;
+      float: left;
+      display: block;
+    }  
+  }
+}
