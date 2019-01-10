@@ -39,6 +39,7 @@ const MeetupEvents = () => (
 
       return (
         <section>
+          <h1>Upcoming Events:</h1>
           {events.map(({ node, node: { name } }) => {
             return <MeetupEvent key={name} {...node} />;
           })}
