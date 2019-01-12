@@ -37,9 +37,23 @@ const MeetupEvents = () => (
     render={data => {
       const events = data.allMeetupEvent.edges;
 
+      const upcomingEvents = events.filter(
+        ({ node: { status } = {} }) => status === 'upcoming',
+      );
+
+      const pastEvents = events.filter(
+        ({ node: { status } = {} }) => status === 'past',
+      );
+
       return (
         <section>
-          {events.map(({ node, node: { name } }) => {
+          {upcomingEvents.length > 0 ? <h1>Upcoming Events:</h1> : ''}
+          {upcomingEvents.map(({ node, node: { name } = {} }) => {
+            return <MeetupEvent key={name} {...node} />;
+          })}
+
+          {pastEvents.length > 0 ? <h1>Past Events:</h1> : ''}
+          {pastEvents.map(({ node, node: { name } = {} }) => {
             return <MeetupEvent key={name} {...node} />;
           })}
         </section>

@@ -7,7 +7,6 @@ const WelcomeBody = () => (
   <div>
     <div className={styles.row}>
       <div className={styles.event}>
-        <h1>Upcoming Event:</h1>
         <MeetupEvents />
       </div>
       <div className={styles.twitter}>
